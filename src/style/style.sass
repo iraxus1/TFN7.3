@@ -1,13 +1,18 @@
+$mainColor: #000
+$articleBackgroundColor: lightgray
+$backgroundColor: #fff
+$footerColor: chocolate
+
 section > h1
   font-size: 2em
   font-weight: bold
-  color: #000
+  color: $mainColor
   text-align: center
 
 article
   border-radius: 10px
-  background-color: #fff
-  box-shadow: 0 0 10px #000
+  background-color: $articleBackgroundColor
+  box-shadow: 0 0 10px $mainColor
   margin: 10px
   padding: 10px
   display: inline-block
@@ -24,18 +29,18 @@ nav > ul > li
   display: inline-block
   margin: 0 10px
   padding: 0 10px
-  box-shadow: 0 0 10px #000
+  box-shadow: 0 0 10px $mainColor
   border-radius: 10px
 
 nav > ul > li > a
-  color: #000
+  color: $mainColor
   text-decoration: none
   font-size: 1.5em
   font-weight: bold
   padding: 10px
 
 header > p, footer
-  color: #000
+  color: $mainColor
   text-align: center
   font-size: 1.5em
   font-weight: bold
@@ -45,8 +50,7 @@ img
   height: 100px
 
 body
-  background-color: #eee
+  background-color: $backgroundColor
 
 header > p, footer
-  background-color: chocolate
-
+  background-color: $footerColor
